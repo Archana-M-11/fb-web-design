@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="fb.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <a class="logo-text" href="index.html">facebook</a>
+            </div>
+            <div class="login"> 
+                <form>
+                    <table>
+                        <tr>
+                            <td><label class="login-label">Email or Mobile</label></td>
+                            <td><label class="login-label">Password</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                            <td><input class="button" type="submit" value="Login"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <a class="forgotten" href="https://www.facebook.com/recover/initiate?lwv=110&amp;ars=royal_blue_bar">Forgotten account?</a>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-body">
+        <div class="left-sect">
+            <p class="fontt">Facebook helps you connect and share with<br>people in your life.</p>
+            <img class="image" src="https://i.postimg.cc/Wb7QX00n/OBa-Vg52wt-TZ.png" alt="Can't load">
+        </div>
+        <div class="right-sect">
+            <p class="create">Create an account</p>
+            <p>It's very quick and easy.</p>
+            <form class="signup" action="fb2.html" id="signupform">
+                <table>
+                    <tr>
+                        <td><input class="name" name="fname" type="text" placeholder="First name">
+                        <input class="name" name="sname" type="text" placeholder="Surname"></td>
+                    </tr>
+                    <tr>
+                        <td><label class="email"><input name="email" type="text" placeholder="Mobile number or email address"></label></td>
+                    </tr>
+                <tr>
+                        <td><label class="password"><input name="pass" type="password" placeholder="New password"></label></td>
+                 </tr>
+                 <tr>
+                     <td><label id="bday">Birthday</label></td>
+                 </tr>
+                 <tr>
+                        <td>
+                            <select name="day" id="day">
+                                <option value="">Day</option>
+                                <option value="1">1</option>     
+                                <option value="2">2</option>
+                                <option value="11">11</option>
+                         </select>
+                          <select name="month" id="month">
+                                <option value="">Month</option>
+                               <option value="january">January</option>
+                             <option value="February">February</option>
+                             <option value="march">March</option>
+                             <option value="april">april</option>
+                             <option value="november">november</option>
+                             <!-- Continue for all months -->
+                             <option value="december">December</option>
+                         </select>
+                         <select name="year" id="year">
+                             <option value="">Year</option>
+                                <!-- Example years (can be adjusted) -->
+                                <option value="2000">2000</option>
+                              <option value="2001">2001</option>
+                              <!-- Continue adding years as needed -->
+                             <option value="2024">2024</option>
+                             <option value="2004">2004</option>
+                          </select>
+                     </td>
+                 </tr>
+                 <tr>
+                     <td>
+                         <label class="grey">Gender</label>
+                      </td>
+                 </tr>
+                 <tr>
+                     <td>
+                         <input name="gender" type="radio">
+                         <label >female</label>
+                            <input name="gender" type="radio">
+                            <label>male</label>
+                            <input name="gender" type="radio">
+                            <label>custom</label>   
+                     </td>
+                  </tr>
+                 <tr>
+                     <td>
+                         
+                         <a class="button sign" href="fb2.html">Sign up</a>
+                      </td>
+                 </tr>
+              </form>
+             </table>
+         </div>
+    </div>
+      <!-- Including jQuery library for easy DOM manipulation ..always include jquerry lib first -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
+    <script src="fbscript.js">
+
+    </script>
+</body>
+</html>
